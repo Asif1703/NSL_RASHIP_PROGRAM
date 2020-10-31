@@ -1,0 +1,22 @@
+if __name__ == '__main__':
+    N = int(raw_input())
+    lst=[]
+    new_lst=[]
+    for i in range(N) :
+            lst= raw_input().split()
+            
+            if lst[0]=="insert":
+                new_lst.insert(int(lst[1]),int(lst[2]))
+            if lst[0]=="print":
+                print(new_lst)
+            if lst[0]=="remove":
+                new_lst.remove(int(lst[1]))   
+            if lst[0]=="append":
+                new_lst.append(int(lst[1])) 
+            if lst[0]=="sort":
+                new_lst.sort()
+            if lst[0]=="pop":
+                new_lst.pop()
+            if lst[0]=="reverse":
+                new_lst.reverse()                 
+ 
